@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageType>Template</PackageType>
+		<PackageVersion>1.0</PackageVersion>
+		<PackageId>ApiClientTemplate</PackageId>
+		<Title>Project template for API clients</Title>
+		<Authors>Nurzhan Aitbayev</Authors>
+		<Description>ApiClientTemplate is a dotnet project template that provides a simple way to create RESTful APIs client in C# applications</Description>
+		<Copyright>Copyright © Nurzhan Aitbayev</Copyright>
+		<PackageTags>dotnet-new;rest;restful;http;api;client;template;</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/nurzhanme/ApiClientTemplate</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/nurzhanme/ApiClientTemplate</PackageProjectUrl>
+		<TargetFramework>net6.0</TargetFramework>
+		
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="ApiClientTemplate\**\*" Exclude="ApiClientTemplate\**\bin\**;ApiClientTemplate\**\obj\**" />
+		<Compile Remove="**\*" />
+	</ItemGroup>
+
+</Project>
